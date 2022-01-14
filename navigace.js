@@ -1,14 +1,20 @@
+/*
 $(document).bind('keypress', function(e) {
+    
     if( event.which === 32 && event.shiftKey ) {
         alert("shift + mezerník");
     }
 e.preventDefault(); 
 });
-/*
-$(document).keydown(function(e) {
+*/
+$(document).bind('keypress', function(e) {
       switch(e.which) {
           case 32: // space
              posunDoprava();
+          break;
+              
+          case 32 && event.shiftKey: // space + shift
+             posunDoleva();
           break;
                   
           case 33: // pageup
