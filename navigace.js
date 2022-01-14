@@ -77,6 +77,10 @@ function posunDoprava(){
 
 function vymazID(){
       // smazani duplicitnich ID			
-      $(".kotva:hidden, .section:hidden").remove();
+      //$(".kotva:hidden, .section:hidden").remove();
+      $(".kotva").each {
+            var poradi = index($(this));
+            alert (poradi);
+      }
 }
 
