@@ -7,8 +7,9 @@ var resizeTimer;
 $(window).on('resize', function(e) {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function() {
-    vymazID();          
-  }, 250);
+        alert("resize");
+        vymazID();          
+  }, 500);
 });
 
 $(document).keydown(function(e) {
