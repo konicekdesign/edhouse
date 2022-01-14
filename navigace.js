@@ -88,6 +88,7 @@ function vymazID(){
                  $(".section").eq(i).attr("id",  $(this).attr("id"));
                  $(this).attr("id","");
            }
+           i++;
       });
 }
 
