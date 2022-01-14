@@ -79,9 +79,9 @@ function posunDoprava(){
 function vymazID(){
       // smazani duplicitnich ID			
       //$(".kotva:hidden, .section:hidden").remove();
-      $(".kotva").each {
+      $(".kotva").each(function() {
             var poradi = index($(this));
             alert (poradi);
-      }
+      });
 }
 
