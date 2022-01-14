@@ -81,11 +81,11 @@ function vymazID(){
       var i = 0;
       $(".kotva").each(function() { 
            if($(this).is(':visible')) { //desktop
-                 $(".section").index(i).attr("id",  $(this).attr("id"));
+                 $(".section").eq(i).attr("id",  $(this).attr("id"));
                  $(this).attr("id","");
            }
            else { //mobil
-                  $(this).attr("id",  $(".section").index(i).attr("id"));
+                  $(this).attr("id",  $(".section").eq(i).attr("id"));
            }
       });
 }
