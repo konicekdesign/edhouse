@@ -80,12 +80,12 @@ function vymazID(){
       //$(".kotva:hidden, .section:hidden").remove();
       var i = 0;
       $(".kotva").each(function() { 
-           if($(this).is(':visible')) { //desktop
+           if($(this).is(':visible')) { //mobil
+                 $(this).attr("id",  $(".section").eq(i).attr("id"));
+           }
+           else { //desktop
                  $(".section").eq(i).attr("id",  $(this).attr("id"));
                  $(this).attr("id","");
-           }
-           else { //mobil
-                  $(this).attr("id",  $(".section").eq(i).attr("id"));
            }
       });
 }
