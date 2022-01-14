@@ -78,9 +78,15 @@ function posunDoprava(){
 function vymazID(){
       // smazani duplicitnich ID			
       //$(".kotva:hidden, .section:hidden").remove();
-      $("body .kotva").each(function() {
-            var poradi = $(this).index();
-            alert (poradi);
+      var i = 0;
+      $(".kotva").each(function() { 
+           if($(this).is(':visible')) { //desktop
+                 $(".section").index(i).attr("id",  $(this).attr("id"));
+                 $(this).attr("id","");
+           }
+           else { //mobil
+                  $(this).attr("id",  $(".section").index(i).attr("id"));
+           }
       });
 }
 
