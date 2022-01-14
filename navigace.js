@@ -1,3 +1,16 @@
+$(document).ready(function () {
+      vymazID();
+});
+
+var resizeTimer;
+
+$(window).on('resize', function(e) {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+    vymazID();          
+  }, 250);
+});
+
 $(document).keydown(function(e) {
       if($(".section").is(":visible")) {
       //alert(e.which);
@@ -60,5 +73,10 @@ function posunDoprava(){
     var vyska = $(".section").outerHeight();
     var next = Math.floor(pozice / vyska) * vyska + vyska;
     $('html, body').animate({ scrollTop: next }, 300);
+}
+
+function vymazID(){
+      // smazani duplicitnich ID			
+      $(".kotva:hidden, .section:hidden").remove();
 }
 
