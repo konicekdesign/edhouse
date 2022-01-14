@@ -29,7 +29,7 @@ function posunDoleva(){
     var pozice = getYPosition();
     var vyska = $(".section").outerHeight();
     var next = Math.floor(pozice / vyska) * vyska - vyska;
-    $('html, body').animate({ scrollTop: next }, 1050);
+    $('html, body').animate({ scrollTop: next }, 500);
 }
 function nothing(){
     
@@ -38,7 +38,7 @@ function posunDoprava(){
     var pozice = getYPosition();
     var vyska = $(".section").outerHeight();
     var next = Math.floor(pozice / vyska) * vyska + vyska;
-    $('html, body').animate({ scrollTop: next }, 1050);
+    $('html, body').animate({ scrollTop: next }, 500);
 }
 function selectCurrentSection(){
     alert("down pressed");
