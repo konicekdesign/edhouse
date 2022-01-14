@@ -1,4 +1,3 @@
-<script>
 $(document).keydown(function(e) {
       switch(e.which) {
           case 37: // left
@@ -38,4 +37,3 @@ function posunDoprava(){
 function selectCurrentSection(){
     alert("down pressed");
 }
-</script>
