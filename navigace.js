@@ -1,16 +1,5 @@
-$(document).ready(function () {
-      vymazID();
-});
-
-var resizeTimer;
-
-$(window).on('resize', function(e) {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function() {
-        alert("resize");
-        vymazID();          
-  }, 500);
-});
+$(document).ready(vymazID);
+$(window).resize(vymazID);
 
 $(document).keydown(function(e) {
       if($(".section").is(":visible")) {
