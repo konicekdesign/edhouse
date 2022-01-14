@@ -1,7 +1,7 @@
 $(document).keydown(function(e) {
       switch(e.which) {
           case 37: // left
-              moveInSectorToLeft();
+              posunDoleva();
           break;
 
          case 38: // up
@@ -25,8 +25,11 @@ function getYPosition(){
   return top;
 }
 
-function moveInSectorToLeft(){
-    alert("left pressed");
+function posunDoleva(){
+    var pozice = getYPosition();
+    var vyska = $(".section").outerHeight();
+    var next = Math.floor(pozice / vyska) * vyska - vyska;
+    $('html, body').animate({ scrollTop: next }, 1050);
 }
 function nothing(){
     
