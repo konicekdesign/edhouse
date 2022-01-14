@@ -84,7 +84,7 @@ function vymazID(){
                  alert ("mobil");
                  $(this).attr("id",  $(".section").eq(i).attr("id"));
            }
-           else { //desktop
+           if($(this).is(':hidden')) { //desktop
                  alert ("desktop");
                  $(".section").eq(i).attr("id",  $(this).attr("id"));
                  $(this).attr("id","");
