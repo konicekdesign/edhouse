@@ -1,14 +1,6 @@
 $(document).bind('keypress', function(e) {
       if($(".section").is(":visible")) {
       switch(e.which) {
-          case 32: // space
-             if (e.shiftKey) { // space + shift
-              posunDoleva();
-             } else {
-                 posunDoprava();
-             }
-          break;
-              
           case 33: // pageup
               posunDoleva();
           break;
@@ -31,6 +23,14 @@ $(document).bind('keypress', function(e) {
 
          case 40: // down
              posunDoprava();
+         break;
+                  
+         case 32: // space
+             if (e.shiftKey) { // space + shift
+              posunDoleva();
+             } else {
+                 posunDoprava();
+             }
          break;
 
          default: return; 
