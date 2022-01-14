@@ -1,5 +1,21 @@
 $(document).keydown(function(e) {
       switch(e.which) {
+          case 32: // space
+             posunDoprava();
+          break;
+          
+          case 32 && event.shiftKey:
+                  alert("shift + mezerník");
+          break;
+                  
+          case 33: // pageup
+              posunDoleva();
+          break;
+                  
+          case 34: // pagedown
+             posunDoprava();
+          break;
+          
           case 37: // left
               posunDoleva();
           break;
