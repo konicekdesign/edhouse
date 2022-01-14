@@ -7,7 +7,7 @@ var resizeTimer;
 $(window).on('resize', function(e) {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function() {
-    vymazID();          
+    alert("resized");//vymazID();          
   }, 250);
 });
 
