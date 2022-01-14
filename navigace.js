@@ -32,7 +32,10 @@ function nothing(){
     
 }
 function posunDoprava(){
-    alert("right pressed");
+    var pozice = getYPosition();
+    var vyska = $(".section").outerHeight();
+    var next = Math.floor(pozice / vyska) * vyska + vyska;
+    $('html, body').animate({ scrollTop: next }, 1050);
 }
 function selectCurrentSection(){
     alert("down pressed");
