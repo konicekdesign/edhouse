@@ -4,7 +4,7 @@ $(document).bind('keypress', function(e) {
     }
 e.preventDefault(); 
 });
-
+/*
 $(document).keydown(function(e) {
       switch(e.which) {
           case 32: // space
@@ -39,6 +39,7 @@ $(document).keydown(function(e) {
      }
      e.preventDefault(); 
   });
+  */
 function getYPosition(){
   var top  = window.pageYOffset || document.documentElement.scrollTop
   return top;
