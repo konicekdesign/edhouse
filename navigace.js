@@ -5,7 +5,7 @@ $(document).keydown(function(e) {
           break;
 
          case 38: // up
-             nothing();
+             posunDoleva();
          break;
 
          case 39: // right
@@ -13,7 +13,7 @@ $(document).keydown(function(e) {
          break;
 
          case 40: // down
-             selectCurrentSection();
+             posunDoprava();
          break;
 
          default: return; 
@@ -29,7 +29,7 @@ function posunDoleva(){
     var pozice = getYPosition();
     var vyska = $(".section").outerHeight();
     var next = Math.floor(pozice / vyska) * vyska - vyska;
-    $('html, body').animate({ scrollTop: next }, 500);
+    $('html, body').animate({ scrollTop: next }, 300);
 }
 function nothing(){
     
@@ -38,8 +38,6 @@ function posunDoprava(){
     var pozice = getYPosition();
     var vyska = $(".section").outerHeight();
     var next = Math.floor(pozice / vyska) * vyska + vyska;
-    $('html, body').animate({ scrollTop: next }, 500);
+    $('html, body').animate({ scrollTop: next }, 300);
 }
-function selectCurrentSection(){
-    alert("down pressed");
-}
+
