@@ -14,7 +14,7 @@ $(document).bind('keypress', function(e) {
              posunDoprava();
           break;
               
-          case (32 && 16) // space + shift
+          case (32 && 16): // space + shift
              posunDoleva();
           break;
                   
