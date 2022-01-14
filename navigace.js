@@ -8,12 +8,13 @@ e.preventDefault();
 });
 */
 $(document).bind('keypress', function(e) {
+      if($(".section").is(":visible")) {
       switch(e.which) {
           case 32: // space
              posunDoprava();
           break;
               
-          case 32 && event.shiftKey: // space + shift
+          case (32 && 16) // space + shift
              posunDoleva();
           break;
                   
@@ -43,7 +44,9 @@ $(document).bind('keypress', function(e) {
 
          default: return; 
      }
+      
      e.preventDefault(); 
+     } //endif
   });
 
 function getYPosition(){
