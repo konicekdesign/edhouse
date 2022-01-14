@@ -1,5 +1,4 @@
 $(document).ready(function () {
-      alert("jedu");
       vymazID();
 });
 
@@ -8,7 +7,7 @@ var resizeTimer;
 $(window).on('resize', function(e) {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function() {
-    alert("resized");//vymazID();          
+    vymazID();          
   }, 250);
 });
 
@@ -80,7 +79,7 @@ function vymazID(){
       // smazani duplicitnich ID			
       //$(".kotva:hidden, .section:hidden").remove();
       $(".kotva").each(function() {
-            var poradi = index($(this));
+            var poradi = $(this).index();
             alert (poradi);
       });
 }
