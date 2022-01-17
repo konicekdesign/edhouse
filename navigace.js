@@ -58,7 +58,6 @@ $(window).resize(vymazID);
 
 $(document).keydown(function(e) {
       if($(".section").is(":visible")) {
-      //alert(e.which);
       switch(e.which) {
           case 33: // pageup
               posunDoleva();
