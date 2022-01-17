@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  vymazID; //vymazani duplicitnich ID
+  vymazID(); //vymazani duplicitnich ID
   //pozice scrollu
   var percent;
     window.addEventListener("scroll", getScrollPercent);
