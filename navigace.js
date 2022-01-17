@@ -7,7 +7,6 @@ $( document ).ready(function() {
       percent = window.pageYOffset / document.body.scrollHeight;
     }
   window.addEventListener("resize", function(){
-    alert ("resize");
     var Ypos = document.body.scrollHeight * percent;
     window.scrollTo(0, Ypos);
   });
@@ -126,11 +125,11 @@ function vymazID(){
       //$(".kotva:hidden, .section:hidden").remove();
       var i = 0;
       $(".kotva").each(function() { 
-           if($(this).is(':visible')) { //mobil
+           if($(this).is(':visible') && $(".section").eq(i).attr("id") !="") { //mobil
                  $(this).attr("id",  $(".section").eq(i).attr("id"));
                  $(".section").eq(i).attr("id","");
            }
-           if($(this).is(':hidden')) { //desktop
+           if($(this).is(':hidden') && $(this).attr("id")!="") { //desktop
                  $(".section").eq(i).attr("id",  $(this).attr("id"));
                  $(this).attr("id","");
            }
