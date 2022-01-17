@@ -7,6 +7,7 @@ $( document ).ready(function() {
       percent = window.pageYOffset / document.body.scrollHeight;
     }
   window.addEventListener("resize", function(){
+    alert ("resize");
     var Ypos = document.body.scrollHeight * percent;
     window.scrollTo(0, Ypos);
   });
