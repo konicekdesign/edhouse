@@ -1,4 +1,59 @@
-$(document).ready(vymazID);
+$( document ).ready(function() {
+  vymazID; //vymazani duplicitnich ID
+  //pozice scrollu
+  var percent;
+    window.addEventListener("scroll", getScrollPercent);
+    function getScrollPercent() {
+      percent = window.pageYOffset / document.body.scrollHeight;
+    }
+  window.addEventListener("resize", function(){
+    var Ypos = document.body.scrollHeight * percent;
+    window.scrollTo(0, Ypos);
+  });
+  
+  
+  //zavirani menu na mobilu a tabletu
+ $('.w-nav-menu').on('click', 'a', function() {
+ 	 $('.w-nav-button.w--open').triggerHandler('tap');
+  });
+  //oznacovani aktivního menu na klik a na scroll
+            let menuScrollTimer = null;
+            $(".nav-menu a").click(function (e) {
+                // Prevent default behaviour ( scroll to element )
+                //e.preventDefault();
+                if (menuScrollTimer === null) {
+                    // Highlight the clicked item
+                    $('.nav-menu a.active').removeClass('active');
+                    $(this).addClass('active');
+                    // Smooth scroll to the target section
+                    let target = $(this).attr('href').substring(1);
+                    $('html, body').animate({ scrollTop: $(target).offset().top - 100 }, 1050);
+                    // Set `menuScrollTimer` timer
+                    // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+                    // This will also prevent the scroll logic from running
+                    menuScrollTimer = setTimeout(function () {
+                        clearTimeout(menuScrollTimer);
+                        menuScrollTimer = null;
+                    }, 1050);
+                }
+            });
+
+            $(window).scroll(function (e) {
+                // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+                if (menuScrollTimer === null) {
+                    let windowTop = $(this).scrollTop();
+
+                    $('.nav-menu a').each(function (event) {
+                      	var target = $(this).attr('href').substring(1);
+                        if (windowTop >= $(target).offset().top - 100) {
+                            $('.nav-menu .active').removeClass('active');
+                            $(this).addClass('active');
+                        }
+                    });
+                }
+            });
+});
+
 $(window).resize(vymazID);
 
 $(document).keydown(function(e) {
