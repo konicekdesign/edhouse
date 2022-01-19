@@ -1,5 +1,17 @@
 $( document ).ready(function() {
   vymazID(); //vymazani duplicitnich ID
+  
+  //scroll to anchor on page load
+  if (window.location.hash) {
+    var hash = window.location.hash;
+
+    if ($(hash).length) {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 900, 'swing');
+    }
+  }
+  
   //pozice scrollu
   var percent;
     window.addEventListener("scroll", getScrollPercent);
