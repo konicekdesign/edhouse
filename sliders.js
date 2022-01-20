@@ -125,8 +125,8 @@ $(document).ready(function () {
  },
  },
  });
- /* slider 4 */
- var slider_wrapper_olomouc = new Swiper(".slider-wrapper-ctyri", {
+  /* Slider 4 */
+ var slider_wrapper_hradiste = new Swiper(".slider-wrapper-ctyri", {
  wrapperClass: "slider-list",
  slideClass: "slider-item",
  navigation: {
