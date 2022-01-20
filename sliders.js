@@ -126,6 +126,7 @@ $(document).ready(function () {
  },
  });
   /* Slider 4 */
+ /*
  var slider_wrapper_hradiste = new Swiper(".slider-wrapper-ctyri", {
  wrapperClass: "slider-list",
  slideClass: "slider-item",
@@ -167,6 +168,7 @@ $(document).ready(function () {
  },
  },
  });
+ */
 /* Slider 5 */
  var slider_wrapper_hradiste = new Swiper(".slider-wrapper-pet", {
  wrapperClass: "slider-list",
