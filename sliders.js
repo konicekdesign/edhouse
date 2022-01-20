@@ -144,8 +144,8 @@ $(document).ready(function () {
 
  },
  speed: 700,
- slidesPerView: '2',
- loop: true,
+ slidesPerView: 'auto',
+ loop: false,
 
  on: {
  init: function () {
@@ -187,7 +187,7 @@ $(document).ready(function () {
  },
  speed: 700,
  slidesPerView: 'auto',
- loop: true,
+ loop: false,
 
  on: {
  init: function () {
@@ -229,7 +229,7 @@ $(document).ready(function () {
  },
  speed: 700,
  slidesPerView: 'auto',
- loop: true,
+ loop: false,
 
  on: {
  init: function () {
@@ -271,7 +271,7 @@ $(document).ready(function () {
  },
  speed: 700,
  slidesPerView: 'auto',
- loop: true,
+ loop: false,
 
  on: {
  init: function () {
