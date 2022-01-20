@@ -1,7 +1,7 @@
 $(document).ready(function () {
  var slider_wrapper = new Swiper(".slider-wrapper-jedna", {
- wrapperClass: "slider-list",
- slideClass: "slider-item",
+ wrapperClass: "slider-list-jedna",
+ slideClass: "slider-item-jedna",
  navigation: {
  nextEl: '.next-slide-jedna',
  prevEl: '.prev-slide-jedna'
@@ -42,8 +42,8 @@ $(document).ready(function () {
  });
  /* slider 2 */
  var slider_wrapper_zlin = new Swiper(".slider-wrapper-dva", {
- wrapperClass: "slider-list",
- slideClass: "slider-item",
+ wrapperClass: "slider-list-dva",
+ slideClass: "slider-item-dva",
  navigation: {
  nextEl: '.next-slide-dva',
  prevEl: '.prev-slide-dva'
@@ -85,8 +85,8 @@ $(document).ready(function () {
  
  /* Slider 3*/
  var slider_wrapper_vsetin = new Swiper(".slider-wrapper-tri", {
- wrapperClass: "slider-list",
- slideClass: "slider-item",
+ wrapperClass: "slider-list-tri",
+ slideClass: "slider-item-tri",
  navigation: {
  nextEl: '.next-slide-tri',
  prevEl: '.prev-slide-tri'
@@ -169,8 +169,8 @@ $(document).ready(function () {
  });
 /* Slider 5 */
  var slider_wrapper_hradiste = new Swiper(".slider-wrapper-pet", {
- wrapperClass: "slider-list",
- slideClass: "slider-item",
+ wrapperClass: "slider-list-pet",
+ slideClass: "slider-item-pet",
  navigation: {
  nextEl: '.next-slide-pet',
  prevEl: '.prev-slide-pet'
@@ -211,8 +211,8 @@ $(document).ready(function () {
  });
  /* Slider 6 */
  var slider_wrapper_hradiste = new Swiper(".slider-wrapper-sest", {
- wrapperClass: "slider-list",
- slideClass: "slider-item",
+ wrapperClass: "slider-list-sest",
+ slideClass: "slider-item-sest",
  navigation: {
  nextEl: '.next-slide-sest',
  prevEl: '.prev-slide-sest'
@@ -253,8 +253,8 @@ $(document).ready(function () {
  });
   /* Slider 7 */
  var slider_wrapper_hradiste = new Swiper(".slider-wrapper-sedm", {
- wrapperClass: "slider-list",
- slideClass: "slider-item",
+ wrapperClass: "slider-list-sedm",
+ slideClass: "slider-item-sedm",
  navigation: {
  nextEl: '.next-slide-sedm',
  prevEl: '.prev-slide-sedm'
