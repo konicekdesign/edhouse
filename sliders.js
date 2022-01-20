@@ -144,7 +144,6 @@ $(document).ready(function () {
 
  },
  speed: 700,
- slidesPerView: 'auto',
  slidesPerView: '2',
  loop: true,
 
