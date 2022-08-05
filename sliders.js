@@ -13,7 +13,7 @@ $(document).ready(function () {
 
  },
  autoplay: {
- delay: 3000,
+ delay: 3500,
 
  },
  speed: 700,
@@ -55,7 +55,7 @@ $(document).ready(function () {
 
  },
  autoplay: {
- delay: 3000,
+ delay: 3500,
 
  },
  speed: 700,
@@ -98,7 +98,7 @@ $(document).ready(function () {
 
  },
  autoplay: {
- delay: 3000,
+ delay: 3500,
 
  },
  speed: 700,
@@ -140,7 +140,7 @@ $(document).ready(function () {
 
  },
  autoplay: {
- delay: 3000,
+ delay: 3500,
 
  },
  speed: 700,
@@ -182,7 +182,7 @@ $(document).ready(function () {
 
  },
  autoplay: {
- delay: 3000,
+ delay: 3500,
 
  },
  speed: 700,
@@ -224,7 +224,7 @@ $(document).ready(function () {
 
  },
  autoplay: {
- delay: 3000,
+ delay: 3500,
 
  },
  speed: 700,
@@ -266,7 +266,7 @@ $(document).ready(function () {
 
  },
  autoplay: {
- delay: 3000,
+ delay: 3500,
 
  },
  speed: 700,
