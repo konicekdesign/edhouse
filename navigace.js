@@ -1,7 +1,8 @@
 $( document ).ready(function() {
-  vymazID(); //vymazani duplicitnich ID
+  // vymazID(); //vymazani duplicitnich ID
   
   //scroll to anchor on page load
+  /*
   if (window.location.hash) {
     var hash = window.location.hash;
 
@@ -22,7 +23,7 @@ $( document ).ready(function() {
     var Ypos = document.body.scrollHeight * percent;
     window.scrollTo(0, Ypos);
   });
-  
+  */
   
   //zavirani menu na mobilu a tabletu
  $('.w-nav-menu').on('click', 'a', function() {
@@ -66,8 +67,8 @@ $( document ).ready(function() {
             });
 });
 
-$(window).resize(vymazID);
-
+// $(window).resize(vymazID);
+/*
 $(document).keydown(function(e) {
       if($(".section").is(":visible")) {
       switch(e.which) {
@@ -109,7 +110,8 @@ $(document).keydown(function(e) {
      e.preventDefault(); 
      } //endif
   });
-
+  */
+/*
 function getYPosition(){
   var top  = window.pageYOffset || document.documentElement.scrollTop
   return top;
@@ -147,4 +149,5 @@ function vymazID(){
            i++;
       });
 }
+*/
 
