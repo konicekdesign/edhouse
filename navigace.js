@@ -32,9 +32,14 @@ $( document ).ready(function() {
   //oznacovani aktivního menu na klik a na scroll
             let menuScrollTimer = null;
             $(".nav-menu a").click(function (e) {
-                // Prevent default behaviour ( scroll to element )
-                //e.preventDefault();
-                if (menuScrollTimer === null) {
+                //kontrola odkazu
+                const anchorElement = document.getElementById(anchorId);
+                function scrollToAnchor(anchorId) {
+                const anchorElement = document.getElementById(anchorId);
+                if (anchorElement) {
+                  const href = window.location.href;
+                  if (!href.startsWith('https://')) { //SCROLL TO ID
+                    if (menuScrollTimer === null) {
                     // Highlight the clicked item
                     $('.nav-menu a.active').removeClass('active');
                     $(this).addClass('active');
@@ -49,6 +54,13 @@ $( document ).ready(function() {
                         menuScrollTimer = null;
                     }, 1050);
                 }
+                  } else { //NAV TO LINK
+                    window.location.href = anchorElement.href;
+                  }
+                } else {
+                  console.error(`Element s ID '${anchorId}' nenalezen.`);
+                }
+              }
             });
 
             $(window).scroll(function (e) {
